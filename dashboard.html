@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Dashboard</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body onload="checkLogin()">
+
+<header>
+<h2>Student Dashboard</h2>
+<nav>
+<a href="login.html" onclick="logout()">Logout</a>
+</nav>
+</header>
+
+<div class="course-container">
+
+    <div class="card">
+        <h3>HTML Mastery</h3>
+        <p>Complete HTML from beginner to advanced</p>
+        <button onclick="openCourse('HTML Mastery','UB1O30fR-EE')" class="btn">
+            Start Course
+        </button>
+    </div>
+
+    <div class="card">
+        <h3>CSS Advanced</h3>
+        <p>Flexbox, Grid, Animations & Responsive Design</p>
+        <button onclick="openCourse('CSS Advanced','1Rs2ND1ryYc')" class="btn">
+            Start Course
+        </button>
+    </div>
+
+    <div class="card">
+        <h3>Python Basics</h3>
+        <p>Learn Python programming fundamentals</p>
+        <button onclick="openCourse('Python Basics','rfscVS0vtbw')" class="btn">
+            Start Course
+        </button>
+    </div>
+
+    <div class="card">
+        <h3>JavaScript Pro</h3>
+        <p>Master JavaScript for web development</p>
+        <button onclick="openCourse('JavaScript Pro','PkZNo7MFNFg')" class="btn">
+            Start Course
+        </button>
+    </div>
+
+    <div class="card">
+        <h3>React JS Fundamentals</h3>
+        <p>Learn components and modern frontend development</p>
+        <button onclick="openCourse('React JS Fundamentals','w7ejDZ8SWv8')" class="btn">
+            Start Course
+        </button>
+    </div>
+
+    <div class="card">
+        <h3>MySQL Database Basics</h3>
+        <p>Learn SQL queries and database design</p>
+        <button onclick="openCourse('MySQL Database Basics','7S_tz1z_5bA')" class="btn">
+            Start Course
+        </button>
+    </div>
+
+    <div class="card">
+        <h3>Android App Development</h3>
+        <p>Build mobile apps using Java</p>
+        <button onclick="openCourse('Android App Development','fis26HvvDII')" class="btn">
+            Start Course
+        </button>
+    </div>
+
+    <div class="card">
+        <h3>Machine Learning Basics</h3>
+        <p>Introduction to ML and AI concepts</p>
+        <button onclick="openCourse('Machine Learning Basics','Gv9_4yMHFhI')" class="btn">
+            Start Course
+        </button>
+    </div>
+
+    <div class="card">
+        <h3>Full Stack Web Development</h3>
+        <p>Complete frontend and backend roadmap</p>
+        <button onclick="openCourse('Full Stack Web Development','nu_pCVPKzTk')" class="btn">
+            Start Course
+        </button>
+    </div>
+
+</div>
+
+<section class="dashboard">
+<h3>Your Progress</h3>
+
+<div class="progress-bar">
+<div class="progress" id="dashProgress"></div>
+</div>
+
+<p id="dashText">0% Completed</p>
+</section>
+
+<script src="js/script.js"></script>
+
+</body>
+</html>

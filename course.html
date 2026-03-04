@@ -1,0 +1,46 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Course</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body onload="checkLogin(); loadCourse();">
+
+<header>
+<h2 id="courseTitle"></h2>
+<nav>
+<a href="dashboard.html">Dashboard</a>
+<a href="login.html" onclick="logout()">Logout</a>
+</nav>
+</header>
+
+<section class="video-section">
+<iframe id="courseVideo" allowfullscreen></iframe>
+<p id="watchMessage">Watch 60% of video to unlock lessons</p>
+</section>
+
+<section class="lessons">
+<h3>Complete Lessons</h3>
+
+<label><input type="checkbox" disabled onclick="updateProgress()"> Lesson 1</label>
+<label><input type="checkbox" disabled onclick="updateProgress()"> Lesson 2</label>
+<label><input type="checkbox" disabled onclick="updateProgress()"> Lesson 3</label>
+
+<div class="progress-bar">
+<div class="progress" id="progress"></div>
+</div>
+<div class="center">
+    <button onclick="goToCertificate()" class="btn">
+        Get Certificate
+    </button>
+</div>
+
+<p id="progressText">0% Completed</p>
+
+</section>
+
+<script src="js/script.js"></script>
+</body>
+</html>

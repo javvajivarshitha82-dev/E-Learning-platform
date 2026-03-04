@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Certificate</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body onload="loadCertificate()">
+
+<h2 style="text-align:center;">Certificate Page</h2>
+
+<div id="certificate" style="width:70%; margin:40px auto; padding:40px; border:5px solid gold; background:black; text-align:center;">
+
+    <h1>Certificate of Completion</h1>
+
+    <p>This is proudly presented to</p>
+
+    <h2 id="certName"></h2>
+
+    <p>For successfully completing</p>
+
+    <h3 id="certCourse"></h3>
+
+    <p id="certDate"></p>
+
+</div>
+
+<div style="text-align:center;">
+    <button onclick="downloadCertificate()" style="padding:10px 20px;">
+        Download Certificate
+    </button>
+</div>
+
+<!-- html2canvas -->
+<script src="https://cdn.jsdelivr.net/npm/html2canvas@1.4.1/dist/html2canvas.min.js"></script>
+
+<!-- jsPDF -->
+<script src="https://cdn.jsdelivr.net/npm/jspdf@2.5.1/dist/jspdf.umd.min.js"></script>
+
+<script src="js/script.js"></script>
+
+</body>
+</html>
